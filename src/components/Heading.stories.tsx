@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { Heading, HeadingProps } from './Heading'
 
 export default {
-    title: 'Components/Heading',
+    title: 'components/Heading',
     component: Heading,
     args: {
         children: 'Lorem ipsum.',
@@ -42,6 +42,11 @@ export const CustomComponent: StoryObj<HeadingProps> = {
     },
     argTypes: {
         children: {
+            table: {
+                disable: true
+            }
+        },
+        asChild: {
             table: {
                 disable: true
             }

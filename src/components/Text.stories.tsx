@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { Text, TextProps } from './Text'
 
 export default {
-    title: 'Components/Text',
+    title: 'components/Text',
     component: Text,
     args: {
         children: 'Lorem ipsum.',
@@ -42,6 +42,11 @@ export const CustomComponent: StoryObj<TextProps> = {
     },
     argTypes: {
         children: {
+            table: {
+                disable: true
+            }
+        },
+        asChild: {
             table: {
                 disable: true
             }
